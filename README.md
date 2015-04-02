@@ -13,19 +13,19 @@ This is an angular factory which reflects the Observer Pattern it works well wit
 
 ### Methods
 
-** _observerService.attach = function(callback, event, id)**
+**_observerService.attach = function(callback, event, id)**--
 function adds a listener to an event with a callback which is stored against the event with it's corresponding id.
 
-**_observerService.detachById = function(id)**
+**_observerService.detachById = function(id)**--
 function removes all occurences of one id from all events in the observer object
 
-**_observerService.detachByEvent = function(event)** __most commonly used and least expensive__
+**_observerService.detachByEvent = function(event)** __most commonly used and least expensive__--
 function removes all occurences of the event from the observer Object
 
-**_observerService.detachByEventAndId = function(event, id)**
+**_observerService.detachByEventAndId = function(event, id)**--
 removes all callbacks for an id in a specific event from the observer object
 
-**_observerService.notify = function(event, parameters)**
+**_observerService.notify = function(event, parameters)**--
 notifies all observers of a specific event, can pass a params variable of any type
 
 ### Controller Example
